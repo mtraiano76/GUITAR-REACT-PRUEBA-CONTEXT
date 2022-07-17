@@ -16,6 +16,7 @@ import LoginPage from './Pages/LoginPage';
 import ProductosAlta from './Pages/ProductosAlta';
 import DetallePage from './Pages/DetallePage';
 import ProductosModificar from './Pages/ProductosModificar';
+import AuthProvider from "./Context/AuthProvider";
 
 
 function App(props) {
@@ -27,6 +28,7 @@ function App(props) {
       <BrowserRouter>
         <Menu isLogin={isLogin}/>
           <Routes>
+            <AuthProvider>
             <Route path='/' element={<IndexPage />} />
             <Route path='home' element={<HomePage />} />
             <Route path='productos' element={<ProductosPage />} />
@@ -34,10 +36,10 @@ function App(props) {
             <Route path='contacto' element={<ContactoPage />} />
             <Route path='/producto/:id' element={<DetallePage />} />
             <Route path='registro' element={<RegistroPage />} />
-            <Route path='ingresar' element={<LoginPage setIsLogin={props.setIsLogin}/>} />
+            <Route path='ingresar' element={<LoginPage setIsLogin={setIsLogin}/>} />
             <Route path='productos/alta' element={<ProductosAlta />} />
             <Route path='/productos/modificar/:id' element={<ProductosModificar />}  />
-
+            </AuthProvider>
           </Routes>
       </BrowserRouter>
 
