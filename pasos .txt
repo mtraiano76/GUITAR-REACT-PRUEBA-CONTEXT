@@ -1,0 +1,11 @@
+npx create-react-app .
+npm i react-router-dom
+npm i axios
+npm install firebase
+
+npm start nuevamente para que levante el proyeco con Firebase incorporado
+
+
+Eliminar los Warning
+
+

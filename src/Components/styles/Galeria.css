@@ -1,0 +1,103 @@
+ul {
+    text-align: center;
+    font-size: 15px;
+    padding-inline-start: 0px;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2px;
+    
+}
+
+img{
+    margin: 5px;
+    border-radius: 2px;
+}
+ .bg-light{
+    background-color: red;
+ }
+
+ .guitarras {
+    /*position: relative;*/
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 0px 25px 75px;
+    margin: -150px 0px 300px -70px
+   
+  }
+  
+  .guitarras .card{
+    position: relative;
+    max-width: 223px;
+    height: 215px;
+    background-color: rgba(168, 14, 14, 0.658);
+    margin: 208px 10px 30px 10px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0,5);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .guitarras .card:hover{
+    height: 600px;
+  }
+  
+  .guitarras .card .gib {
+    position: relative;
+    width: 200px;
+    height: 1000px;
+    top: -60px;
+    left: 13px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0,2);
+  }
+  
+  .guitarras .card .gib img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  
+  .guitarras .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15 px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  .guitarras .card .content h2{
+    font-size: 20px;
+  }
+  .guitarras .card .content p{
+    font-size: 10px;
+    font-weight: lighter;
+  }
+
+
+  
+  .guitarras .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+  }
+
+  a.navbar-brand {
+    font-size: 25px;
+  }
+  
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.55);
+    font-size: 22px;
+  }

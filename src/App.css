@@ -1,0 +1,156 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+
+*{
+  font-family: "Montserrat" ;
+}
+.App {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+}
+
+body {
+  background-image: url(/public/img/fondo.jpg);
+  align-items: center;
+
+ 
+}
+
+
+.App button {
+  background-color: rgba(235, 44, 44, 0.733);
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+  border-color: azure;
+  margin-left: 5px;
+}
+
+.App form {
+  width: 50%;
+  background-color: rgba(168, 14, 14, 0.658);
+  padding: 14px;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.App input {
+  width: 100%;
+  background: rgb(104, 9, 9);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid red;
+  font-size: 18px;
+  color: white;
+}
+
+.App input.button {
+  width: 150px;
+  background: rgb(205, 15, 15);
+  border: 1px solid rgb(170, 170, 170);
+  color: white;
+  margin: 20px 0;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+
+div.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+
+}
+
+img.card-img-top {
+  max-width: 100px;
+  margin-top: 10px;
+  align-self: center;
+
+
+}
+
+a.btn.btn-primary {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat";
+  padding: 2%;
+  background-color: red;
+  border-color: white;
+  margin: 5px;
+}
+
+
+
+div.card {
+  background-color: rgba(220, 20, 60, 0.301);
+  height: 400px;
+  margin: auto;
+}
+
+div.card-title.h5 {
+  margin: 5px;
+  font-size: 20px;
+}
+p.card-text{
+  color: azure;
+}
+
+textarea {
+  width: 100%;
+}
+
+a.navbar-brand {
+  font-size: 25px;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0,0,0,.55);
+  font-size: 22px;
+}
+
+p{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+div.detalle{
+  background-color: rgba(220, 20, 60, 0.473);
+  width: 50%;
+  margin: auto;
+  border-radius: 6px;
+  margin-top: 50px;
+
+
+}
+
+
+a.btn.btn-productos {
+  width: 30%;
+  background-color: red;
+  font-family: "Montserrat";
+  color: white;
+}
+
+a.btn.btn-galeria {
+  width: 30%;
+  background-color: rgb(175, 173, 173);
+  color: whitesmoke;
+}
+
+.d-grid {
+  display: grid !important;
+  justify-items: center;
+  margin-bottom: 50px;
+  font-family: "Montserrat";
+  
+}
