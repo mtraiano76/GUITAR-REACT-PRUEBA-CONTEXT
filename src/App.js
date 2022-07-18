@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -24,11 +24,11 @@ function App(props) {
   return (
     <div className="App">
       <Header />
-     
+
       <BrowserRouter>
-        <Menu isLogin={isLogin}/>
+        <AuthProvider>
+          <Menu isLogin={isLogin} />
           <Routes>
-            <AuthProvider>
             <Route path='/' element={<IndexPage />} />
             <Route path='home' element={<HomePage />} />
             <Route path='productos' element={<ProductosPage />} />
@@ -36,11 +36,11 @@ function App(props) {
             <Route path='contacto' element={<ContactoPage />} />
             <Route path='/producto/:id' element={<DetallePage />} />
             <Route path='registro' element={<RegistroPage />} />
-            <Route path='ingresar' element={<LoginPage setIsLogin={setIsLogin}/>} />
+            <Route path='ingresar' element={<LoginPage setIsLogin={setIsLogin} />} />
             <Route path='productos/alta' element={<ProductosAlta />} />
-            <Route path='/productos/modificar/:id' element={<ProductosModificar />}  />
-            </AuthProvider>
+            <Route path='/productos/modificar/:id' element={<ProductosModificar />} />
           </Routes>
+        </AuthProvider>
       </BrowserRouter>
 
       <Footer />
