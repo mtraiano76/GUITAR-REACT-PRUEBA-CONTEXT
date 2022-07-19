@@ -10,7 +10,7 @@ function Home(props) {
         <div className="bienvenido">
             <img src="img/gibson.jpg" alt="Guitar Shop" />
             <div className="d-grid gap-2">
-                <Button as={Link} to={'/productos/'} variant="productos" size="lg">PRODUCTOS</Button>
+             
                 <Button as={Link} to={'/galeria/'} variant="galeria" size="lg">GALERIA</Button>
             </div>
         </div>
