@@ -17,6 +17,7 @@ import ProductosAlta from './Pages/ProductosAlta';
 import DetallePage from './Pages/DetallePage';
 import ProductosModificar from './Pages/ProductosModificar';
 import AuthProvider from "./Context/AuthProvider";
+import ArticulosPage from './Pages/ArticulosPage';
 
 
 function App(props) {
@@ -36,6 +37,7 @@ function App(props) {
             <Route path='contacto' element={<ContactoPage />} />
             <Route path='/producto/:id' element={<DetallePage />} />
             <Route path='registro' element={<RegistroPage />} />
+            <Route path='articulos' element={<ArticulosPage />} />
             <Route path='ingresar' element={<LoginPage setIsLogin={setIsLogin} />} />
             <Route path='productos/alta' element={<ProductosAlta />} />
             <Route path='/productos/modificar/:id' element={<ProductosModificar />} />

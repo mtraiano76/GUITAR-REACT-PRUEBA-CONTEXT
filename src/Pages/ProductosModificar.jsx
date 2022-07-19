@@ -17,7 +17,6 @@ function ProductosModificar(){
         }catch(e){
             console.log(e)
         }
-        
     }
     useEffect(
         ()=>{

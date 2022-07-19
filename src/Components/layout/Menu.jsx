@@ -19,6 +19,8 @@ function Menu(props) {
                 <Nav.Link as={Link} to="/home">Home</Nav.Link>
                 <Nav.Link as={Link} to="/galeria">Galeria</Nav.Link>
                 <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>
+                <Nav.Link as={Link} to="/articulos">Articulos</Nav.Link>
+                
 
                 {
                   !context.isLogin &&
@@ -32,18 +34,17 @@ function Menu(props) {
                   <>
                     <Nav.Link as={Link} to="/productos">Productos</Nav.Link>
                     <NavDropdown title="Menu" id="basic-nav-dropdown">
-                  <NavDropdown.Item as={Link} to="/productos/alta">Alta</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/productos/alta">Alta</NavDropdown.Item>
 
                   <NavDropdown.Divider />
 
                 </NavDropdown>
                     <Nav.Link onClick={context.logoutUser}>Salir</Nav.Link>
 
-                    
+
                   </>
                 }
-               
-               
+
               </Nav>
             </Navbar.Collapse>
 
