@@ -92,12 +92,3 @@ img{
     transition-delay: 0.3s;
   }
 
-  a.navbar-brand {
-    font-size: 25px;
-  }
-  
-  
-  .navbar-light .navbar-nav .nav-link {
-    color: rgba(0,0,0,.55);
-    font-size: 22px;
-  }
